@@ -1,0 +1,19 @@
+﻿@model LuuThiHanHanh_01.Models.DangNhap
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+
+@using (Html.BeginForm("Login", "Account", new {​ ReturnURL = ViewBag.ReturnUrl }​))
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
